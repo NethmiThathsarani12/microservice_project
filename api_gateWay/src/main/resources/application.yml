@@ -11,7 +11,10 @@ spring:
             uri:  lb://VEHICLE-SERVICE
             predicates:
               - Path=/vehicle/**
-
+          - id: USER-SERVICE
+            uri:  lb://USER-SERVICE
+            predicates:
+              - Path=/user/**
 eureka:
   client:
     register-with-eureka: true
