@@ -15,8 +15,6 @@ public class VehicleController {
     @Autowired
     private VehicleService service;
 
-
-
     @GetMapping
     public List<VehicleDTO> getAllVehicle(){
         return service.getAllVehicle();
