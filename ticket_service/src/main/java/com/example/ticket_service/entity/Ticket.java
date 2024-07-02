@@ -18,4 +18,5 @@ public class Ticket {
     private String id;
     private String vehicleId;
     private String date;
+    private String userId;
 }

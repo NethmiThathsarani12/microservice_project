@@ -9,4 +9,5 @@ public interface UserService {
     UserDTO saveUser(UserDTO dto);
     UserDTO updateUser(UserDTO dto);
     List<UserDTO> getAllUser();
+    UserDTO findUserById(String id);
 }

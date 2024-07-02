@@ -30,6 +30,11 @@ public class VehicleController {
         return service.updateVehicle(dto);
     }
 
+    @GetMapping(path = "/{Id}")
+    public VehicleDTO getById(@PathVariable("Id") String id){
+        return service.findById(id);
+    }
+
 
 
 }

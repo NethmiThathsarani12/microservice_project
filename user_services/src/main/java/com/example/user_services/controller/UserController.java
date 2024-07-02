@@ -28,4 +28,9 @@ public class UserController {
     public UserDTO updateVehicle(@RequestBody UserDTO dto){
         return service.updateUser(dto);
     }
+
+    @GetMapping(path = "/{Id}")
+    public UserDTO getById(@PathVariable("Id") String id){
+        return service.findUserById(id);
+    }
 }
